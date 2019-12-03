@@ -1,0 +1,46 @@
+html, body {
+    display: flex;
+    flex-direction:column;
+}
+
+body{
+    background-image: linear-gradient(#337ab7,#00abff);
+    background-attachment: fixed;
+    overflow-y:  overlay;
+}
+
+body > * {
+    flex-shrink: 0;
+}
+
+.ateofim{
+    flex-grow: 1;
+}
+
+.ateofim:hover{
+    z-index: 1000;
+}
+
+.despacinho{
+    margin-top: 15px;
+}
+
+#goto{
+    width:24px;
+}
+
+.sumir{
+    opacity: 0;
+    position: absolute;
+    height: 64%;
+}
+.sumir:hover{
+    height: auto;
+    transition: opacity 0.2s;
+    opacity: 1;
+    z-index: 100;
+}
+
+.linkao:hover{
+    text-decoration: none;
+}
